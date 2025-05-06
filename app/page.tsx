@@ -90,7 +90,7 @@ export default function HomePage() {
         <button onClick={openModal} className={styles.popButton}>
           お問い合わせフォームを開く
         </button>
-        <div className={styles.modal} onClick={closeModal}>
+        <div id="modal" className={styles.modal} onClick={closeModal}>
           <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
             <span onClick={closeModal} className={styles.close}>
               ×
